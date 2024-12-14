@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css-JS/style.css">
+    <script src="css-JS/modal.js" defer></script>
+    <script src="css-JS/gallery.js" defer></script>    
+    <title>Ben Ruitenbeek</title>
+</head>
+<body>
+    <header>
+        <p>Ben Ruitenbeek</p>
+    </header>
+    <p id="Warning">You may not view this page on a screen smaller then 1000 pixels if you're seeing this then your screen is smaller then 1000 px or you have javascript disabled</p>
+    <main>
+        <div class="top">
+            <img src="imgs/Untitled.jpg" alt="Picture">
+            <span class="info">
+                Ben Ruitenbeek
+                <span id="Socials">
+                    <button id="social1" class="SocialBtn" onclick="window.open('https://github.com/MA-Silent').focus">GitHub</button>
+                    <button id="social2" class="SocialBtn" onclick="window.open('https://38739.hosts2.ma-cloud.nl/').focus">MA-Cloud</button>
+                </span>    
+            </span>
+        </div>
+        
+        <div class="mid" id="mid">
+        <img src="imgs/back.png" id="backBtn" alt="Back">
+        <div class="gallery">
+        
+            <div class="abc">
+                <button class="modalButton" onclick="openModal('One')">Mijn skills</button>
+                    <div id="One" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal('One')">&times;</span>
+                        <p>Ik kan meeste (programeer)talen gebruikt in mijn voordeel en kan een computer compleet manipuleren d.m.v toetsenbord</p>
+                      </div>
+                </div> 
+                <button class="modalButton" onclick="openModal('Two')">Soft skills</button>
+                    <div id="Two" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal('Two')">&times;</span>
+                        <p>Ik zou graag willen dat ik zonder problemen kan presenteren zonder trucjes</p>
+                      </div>
+                </div> 
+                <button class="modalButton"  onclick="openModal('Three')">Bereikt hebben</button>
+                    <div id="Three" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal('Three')">&times;</span>
+                        <p>Ik wil een complete en functionele website maken</p>
+                        </div> 
+                    </div>
+            </div>
+            <div class="abc">
+                <button class="modalButton" onclick="openModal('Four')">Na het MA</button>
+                    <div id="Four" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal('Four')">&times;</span>
+                        <p>Na deze opleiding zit ik er over na te denken om naar nog een opleiding te gaan en als ik dat niet doe of niet mogelijk is dan ga ik direct werken en ga aan een bedrijf wat mij ongeveer 3 jaar geledenen heeft gevraagd om voor hun te werken daar ga ik vragen of ik daar kan werken het bedrijf is Arrow group in Amsterdam</p>
+                      </div>
+                </div> 
+                <button class="modalButton" onclick="openModal('Five')">Droombaan</button>
+                    <div id="Five" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal('Five')">&times;</span>
+                        <p>Ik heb op het moment niet echt een droombaan</p>
+                      </div>
+                </div> 
+                <button class="modalButton"  onclick="openModal('Six')">Andere droom</button>
+                    <div id="Six" class="modal">
+                      <div class="modal-content">
+                        <span class="close" onclick="closeModal('Six')">&times;</span>
+                        <p>Ik wil gewoon zonder problemen willen kunnen leven zonder over financiën te veel hoeven na te denken</p>
+                        </div> 
+                    </div>
+            </div>
+        </div>
+        <img src="imgs/next.png" id="nextBtn" alt="Next">    
+    </div>
+    </main>
+
+</body>
+</html>

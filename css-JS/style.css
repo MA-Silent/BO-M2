@@ -1,0 +1,180 @@
+html,body{
+    margin: 0%;
+    padding: 0%;
+    height: 100%;
+    overflow-y: hidden;
+}
+p{
+    margin: 0%;
+}
+
+:root{
+    --heightOfHeader: 133px;
+    --heightOfmid: calc(100% - var(--heightOfHeader));
+}
+header{
+    background-color: rgb(86, 86, 86);
+    color:  white;
+    height: var(--heightOfHeader);
+}
+
+header>p{
+    font-family: 'Segoe UI';
+    padding: 40px;
+    padding-left: 40px;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+
+main{
+    height: var(--heightOfmid);  
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+}
+
+
+div.top{
+    height: 100%;
+    scroll-snap-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+div.top>img{
+    border-radius: 100%;
+    margin-left: 50px;
+    height: 305px;
+}
+
+div.top>span.info{
+    margin-left: 590px;
+}
+
+span.info{
+    font-size: 30px;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+span#Socials{
+    display: grid;
+    margin-top: 28px;
+    grid-template-columns: auto auto auto;
+    column-gap: 31px;
+}
+span#Socials>button#social1{
+    grid-row-start: 1;
+    grid-row-end: 1;
+}
+
+span#Socials>button#social2{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.SocialBtn{
+    width: 134px;
+    border-radius: 25px;
+    border: #707070 solid 1px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2), 0 2px 2px 0 rgba(0,0,0,0.19);
+    color: black;
+    text-align: center;
+}
+
+#topBtn{
+    align-self: flex-end;
+}
+
+#midBtn{
+    align-self: baseline;
+}
+
+.mid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 100%;
+    scroll-snap-align: center;
+    overflow-x: scroll; 
+}
+
+.gallery{
+    scroll-snap-align: center;
+    width: 1280px;
+    height: fit-content;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: hidden;
+    scrollbar-width: none;
+}
+
+.gallery div.abc{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+
+.modalButton{
+    height: 250px;
+    width: 400px;
+    cursor: pointer;
+}
+
+ /* Modal Css */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+ 
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+  #backBtn,#nextBtn{
+    --size: 64px;
+    cursor: pointer;
+    height: var(--size);
+    width: var(--size);
+  }
+
+
+  @media only screen and (max-width: 1000px) {
+    main,header{
+        display: none;
+    }
+  }
